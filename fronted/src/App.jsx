@@ -10,9 +10,11 @@ import SkillsPython from './componts/Skills/SkillPaython';
 import SkillsDataScience from './componts/Skills/SkillDataScince';
 import SkillsGraphicDesign from './componts/Skills/SkillGraphicDisner';
 
+
 // About Page
 import About from './componts/About';
 
+import Game from './componts/Game';
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token') || null);
   const [user, setUser] = useState(null);
@@ -44,6 +46,7 @@ function App() {
           {/* Protected Routes */}
           <Route path="/" element={<ProtectedRoute><Home onLogout={handleLogout} user={user} /></ProtectedRoute>} />
           <Route path="/about" element={<ProtectedRoute><About onLogout={handleLogout} user={user} /></ProtectedRoute>} />
+          <Route path="/game" element={<ProtectedRoute><Game onLogout={handleLogout} user={user} /></ProtectedRoute>} />
           
           {/* Skill Pages */}
           <Route path="/skills/mern" element={<ProtectedRoute><SkillsMERN onLogout={handleLogout} user={user} /></ProtectedRoute>} />

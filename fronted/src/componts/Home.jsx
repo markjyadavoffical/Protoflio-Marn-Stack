@@ -184,21 +184,33 @@ My toolkit? Python wizardry with TensorFlow, Scikit-learn, and Pandas for NLP, C
 
           {/* Nav Links - Colorful Buttons */}
           <div className="space-x-4 mb-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Link 
-              to="/about" 
-              className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:from-cyan-400 hover:to-blue-500 transform hover:scale-105 transition-all duration-300"
-            >
-              About Me ✨
-            </Link>
-            <motion.button
-              whileHover={{ scale: 1.05, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={handleLogout}
-              className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:from-orange-400 hover:to-red-500 transform hover:scale-105 transition-all duration-300"
-            >
-              Logout 🚪
-            </motion.button>
-          </div>
+  <Link 
+    to="/skills/python"  // Example: Direct to Python as 2nd, or make a skills overview
+    className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:from-green-400 hover:to-emerald-500 transform hover:scale-105 transition-all duration-300"
+  >
+    Explore Skills 🐍
+  </Link>
+  <Link 
+    to="/about" 
+    className="px-8 py-4 bg-gradient-to-r from-purple-500 to-violet-600 text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:from-purple-400 hover:to-violet-500 transform hover:scale-105 transition-all duration-300"
+  >
+    About Me (Dive Deeper) 🌟
+  </Link>
+  <Link 
+  to="/game" 
+  className="px-8 py-4 bg-gradient-to-r from-purple-500 to-fuchsia-600 text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:from-purple-400 hover:to-fuchsia-500 transform hover:scale-105 transition-all duration-300"
+>
+  Play Car Racing Game 🎮
+</Link>
+  <motion.button
+    whileHover={{ scale: 1.05, rotate: 5 }}
+    whileTap={{ scale: 0.95 }}
+    onClick={handleLogout}
+    className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:from-orange-400 hover:to-red-500 transform hover:scale-105 transition-all duration-300"
+  >
+    Logout 🚪
+  </motion.button>
+</div>
         </div>
       </section>
 
