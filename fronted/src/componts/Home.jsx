@@ -123,7 +123,7 @@ My toolkit? Python wizardry with TensorFlow, Scikit-learn, and Pandas for NLP, C
             className="mb-8"
           >
             <motion.img
-              src="/imag/muskan.jfif" 
+              src="./imag/my.jpg" 
               alt={`${userName}'s Profile`}
               whileHover={{ 
                 scale: 1.1, 
