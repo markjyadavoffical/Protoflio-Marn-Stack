@@ -55,9 +55,9 @@ const Home = ({ onLogout, user }) => {
     );
   }
 
-  const userName = user?.name || 'Mark J Yadav';
+  const userName = user?.name || 'Muskan Yadav';
 
-  // Creative Bio - Staggered for typing effect
+ 
   const bioText = `Mark J Yadav: Igniting Innovation Through Code & Data 🌟
 As a Senior Data Scientist and Full-Stack Developer with 5+ years of battle-tested experience, I craft transformative solutions that blend cutting-edge tech with real-world impact. From architecting ML models in Python that predict market trends with 95% accuracy to deploying scalable MEAN Stack apps on AWS that serve millions—I've turned complex challenges into seamless successes.
 
@@ -114,7 +114,7 @@ My toolkit? Python wizardry with TensorFlow, Scikit-learn, and Pandas for NLP, C
       <section className="relative min-h-screen flex items-center justify-center px-4 pt-16 z-10">
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
         <div className="max-w-6xl mx-auto text-center relative">
-          {/* Profile Image - Enhanced 3D with Glow */}
+          {}
           <motion.div
             initial={{ scale: 0.5, opacity: 0, y: 50, rotateY: -180 }}
             animate={{ scale: 1, opacity: 1, y: 0, rotateY: 0 }}
@@ -123,7 +123,7 @@ My toolkit? Python wizardry with TensorFlow, Scikit-learn, and Pandas for NLP, C
             className="mb-8"
           >
             <motion.img
-              src="/imag/my.jpg"  // Fixed path: public/imag/my.jpg (../public se direct / use kar)
+              src="/imag/muskan.jfif" 
               alt={`${userName}'s Profile`}
               whileHover={{ 
                 scale: 1.1, 

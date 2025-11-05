@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const About = ({ user, onLogout }) => {
-  const userName = user?.name || 'Mark J Yadv';  // Apna name yahaan daal de, e.g., 'Mark J. Yadav'
+  const userName = user?.name || 'Muskan Yadav';  // Apna name yahaan daal de, e.g., 'Mark J. Yadav'
   const userBio = user?.bio || `Hi, I'm ${userName}, a passionate Full-Stack Software Developer with over 3 years of hands-on experience in building innovative and scalable digital solutions. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js), creating dynamic web applications that enhance user experiences and drive business efficiency.
 
 My skill set extends beyond frontend and backend development: I leverage Python for automation, scripting, and robust backend APIs; harness Data Science and Machine Learning (using tools like Scikit-learn, TensorFlow, and Pandas) to extract actionable insights from complex datasets; and apply Graphic Design principles (with Adobe Suite and Figma) to craft visually stunning UI/UX designs that blend creativity with functionality.
